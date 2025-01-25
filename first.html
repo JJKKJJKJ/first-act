@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="main.css" /> -->
+
     <title>Document</title>
 
     <style>
@@ -32,19 +34,49 @@
         background-repeat: no-repeat;
       }
 
+      .col {
+        color: #FF00DD;
+      }
+      .fnd {
+          margin-bottom: 10px;
+        }
+      #result {
+        margin: 20px auto;
+        background-color: aqua;
+      }
   </style>
+<script>
 
+
+	function login() {
+
+    var name = document.getElementById('name@examle.com').value;
+    var pw = document.getElementById('exampleInputPassword1').value;
+
+    if(name === undefined || name === "") {
+      alert("id를 입력하세요.");
+    } else {
+      if(pw === undefined || pw === "") {
+        alert("pw를 입력하세요.");
+      } else {
+        alert("손놈("+ name+")을 환영합니다");        
+      location.href="login.html";
+      }
+    }
+
+	}
+</script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-  
-    <div class="container text-center"> 
+  <div id='result'></div>
+      <div class="container text-center"> 
         <div class="row">
           <div class="col">
           </div>
           <div class="col">
-            <img src="/스크린샷 2025-01-25 120512.png" alt="">
+            <img src="mainIcon.png" alt="손지혜바보">
           </div>
           <div class="col">
           </div>
@@ -77,11 +109,11 @@
           <div class="col">  
           </div>
           <div class="col">
-            <div class="d-grid gap-2">
-              <button type="button" class="btn btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-google" viewBox="0 0 16 16">
+            <div class="d-grid gap-2"> 
+              <button type="button" class="btn btn-outline-secondary" onClick="location.href='//www.google.com'"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-google" viewBox="0 0 16 16">
                 <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
-              </svg><strong>&nbsp;Sing in with google</strong> </button>  
-              </div>
+              </svg><strong>&nbsp;Sing in with google</strong> </button>
+             </div>
           </div>
           <div class="col">
           </div>
@@ -104,7 +136,7 @@
           </div>
           <div class="col">
             <div class="d-grid gap-2">
-                <button type="button" class="btn btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-facebook" viewBox="0 0 16 16">
+                <button type="button" class="btn btn-outline-secondary" onClick="location.href='//www.facebook.com'"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-facebook" viewBox="0 0 16 16">
                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
                   </svg><strong>&nbsp;Sing in with facebook</strong> </button>    
               </div>
@@ -153,7 +185,7 @@
 
                   
 
-                  <label for="ID" class="form-label" style="float: left;">ID</label>
+                  <label for="Remember-me" class="form-label" style="float: left;" >ID</label>
                   <div id="drop_the_text">
                     <input type="email" class="form-control" id="name@examle.com" aria-describedby="name@examle.com" placeholder=" name@examle.com">
                   </div>
@@ -177,8 +209,9 @@
                 <button type="submit" class="btn btn-primary">Submit</button> -->
               </fieldset>
               <div class="row">
-                <div class="col">
-                  <span style="float: left;"><input type="checkbox">Remember</span>
+                <div class="col find">
+                  <span style="float: left;"><input type="checkbox" id="Remember-me">Remember</span> <span style="color: blue ; float: right;" > 
+                     Forgot password?</span>
                 </div>
               </div>
             </form>
@@ -203,7 +236,7 @@
           </div>
           <div class="col">
             <div class="d-grid gap-2">
-                <button class="btn btn-primary" type="button">Sing In</button>
+                <button id="login"class="btn btn-primary" type="button" onclick="login()">Sing In</button>
               </div>
           </div>
           <div class="col">
