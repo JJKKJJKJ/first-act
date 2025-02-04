@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <style>
+    <style>
         body {
             margin: 0px auto;
             width: 100%;
@@ -55,13 +56,7 @@
         .sidebar-nav li a:hover {
 
             color: black;
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        .sidebar-nav>.sidebar-brand {
-
-            font-size: 1.3em;
-            line-height: 3em;
+            background: rgba(218, 211, 211, 0.2);
         }
 
         .container {
@@ -84,11 +79,19 @@
             background-color: white;
         }
 
+        .container {
+            margin-bottom: -50px;
+            width: 100%;
+            top: 12%;
+            left: 14%;
+            transform: translate(-3%1%);
+            position: absolute;    
+        }
+
         .nav_top {
             width: 100%;
             background-color: white;
             border-bottom: 1px solid #747474;
-            /* border-right: 1px solid #ddd; */
             position: fixed;
             height: 90px;
             font-size: xx-large;
@@ -97,33 +100,31 @@
             justify-content: space-between;
             overflow-x: hidden;
             overflow-y: auto;
+            z-index: 1;
         }
 
+        .parent {
+            display: flex;
+            margin-left: 170px;
+        }
 
+        .parent>div {
+            height: 700px;
+        }   
         .container-fluid  {
             margin-top: 10px;
             border-bottom: 1px solid #747474;
         }
 
-        .container-hanyong{
-            width: 90%;
-            margin-left: 192px;
-            margin-top: 17px;
-         
-            height: 230px;
-            /* font-size: xx-large; */
-            /* position: fixed; */
-            display: flex;
-            /* float: right; */
-            justify-content: space-between;
-            /* padding-left: 40px;  */
-            /* box-sizing: border-box; */
-            outline: none;
-            /* border-radius: 80px; */
-            background-repeat: no-repeat;
-            /* overflow-x: hidden;
-            overflow-y: auto; */           
+        .imgSunny{
+            width: 50px;
+            filter: invert(66%) sepia(80%) saturate(2071%) hue-rotate(336deg) brightness(97%) contrast(100%);
         }
+
+        .imgKeypad{
+            width: 30px;
+        }
+
         .ul>li{
             float: left;
             list-style:none;}
@@ -131,50 +132,54 @@
             .parent>row{
                 margin: 100px;
             }
-         </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
-    <!-- <div> -->
-        <div style="background-color: #F6F6F6; height: 1020px;">
-            <nav class="nav_top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#" style="margin-top: 100px;">
-                        <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Ads" width="48" height="24"
-                            style="margin-bottom: 10px;">
-                        <span class="navber_span">Admin</span>
-                    </a>
-    
-                    <a class="navbar-brand " href="#" style="float: right;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-emoji-smile-upside-down" viewBox="0 0 16 16">
-                            <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m0-1a8 8 0 1 1 0 16A8 8 0 0 1 8 0" />
-                            <path
-                                d="M4.285 6.433a.5.5 0 0 0 .683-.183A3.5 3.5 0 0 1 8 4.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.5 4.5 0 0 0 8 3.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683M7 9.5C7 8.672 6.552 8 6 8s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5m4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5" />
-                        </svg>
-                    </a>
-                </div>
-            </nav>
-            <div style=" background-color: red; height: 73px;">
-            </div>
-            <div style="background-color: blue;">
+            
 
-                <div>
-                    <div id="page-wrapper">
-                        <!-- 사이드바 -->
-                        <div id="sidebar-wrapper">
-                            <!-- <div id="sidebar-wrapper" style=" z-index: 1; background-color: gold;"> -->
-    
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      
+</head>
+
+<body>
+    <div style="background-color: #F6F6F6; height: 800px;">
+        <nav class="nav_top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="margin-top: 100px;">
+                    <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Ads" width="48" height="24"
+                        style="margin-bottom: 10px;">
+                    <span class="navber_span">Admin</span>
+                </a>
+
+                <a class="navbar-brand " href="#" style="float: right;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-emoji-smile-upside-down" viewBox="0 0 16 16">
+                        <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m0-1a8 8 0 1 1 0 16A8 8 0 0 1 8 0" />
+                        <path
+                            d="M4.285 6.433a.5.5 0 0 0 .683-.183A3.5 3.5 0 0 1 8 4.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.5 4.5 0 0 0 8 3.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683M7 9.5C7 8.672 6.552 8 6 8s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5m4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+        <div style=" background-color: red; height: 73px;">
+        </div>
+        <div style="background-color: blue;">
+
+            <div>
+                <div id="page-wrapper">
+                    <!-- 사이드바 -->
+                    <div id="sidebar-wrapper">
+                        <!-- <div id="sidebar-wrapper" style=" z-index: 1; background-color: gold;"> -->
                             <ul class="sidebar-nav">
                                 <li class="sidebar-brand" style="font-size:small;"><a href="#"> &nbsp;
                                         <path
@@ -276,114 +281,77 @@
     
                 </div>
             </div>
-            <!-- <dic> -->
-            <div class="container-hanyong">
-                <div class="row" style="width:95%;"> 
-                    <!-- <div class="col" >   -->
-                    <!-- <span class="SJajHc" style="background:url(/images/nav_logo321_hr.webp) no-repeat;background-position:-53px 0;background-size:167px;width:20px">page</span> -->
-                    <div class="row" style="margin-left: 40px; margin-top: 30px;">
-                        <ul  class="ul">
+
+                  <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                  </ul></details></li>
+            </ul>
+        </div>
+
+        <form>
+            <div class="parent">
+                <div class="container">
+                    <div class="row" style="width: 100%; height: 200px;">
+                        <div class="row" style="margin-left: 40px; margin-top: 30px;">
+                            <ul  class="ul">
                             <li><a href="Page 1 ">Page 1 ></a></li>
                             <li><a href="Page 2 ">&nbsp;Page 2 ></a></li>
                             <li><a href="Page 3 ">&nbsp;Default</a></li>
                         </ul>
-                    </div>
-                        
-                    <div class="row" style="margin-left: 40px;">
-                        <h2><span style="font: x-large; margin-top: 10px;">code</span></h2><br>
-                    </div>
-                    
-                    <div class="row" style="margin-left: 40px;">
-                        <div class="col">
-                            <select class="form-select" id="specificSizeSelect">
-                            <option selected>N</option>
-                            </select>
-                        </div>           
-                        <div class="col">  
-                            <select class="form-select" id="specificSizeSelect">
-                            <option selected>Y</option>
-                            <option selected>N</option>
-                            </select>
                         </div>
-                        <div class="col">
-                            <select class="form-select" id="specificSizeSelect">
-                                <option selected>날짜</option>
-                            </select><br>    
+                        <div class="row" style="margin-left: 40px;">
+                            <h3 style="font-weight: bolder;">Code</h3>
                         </div>
-                        <div class="col">
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="2024-12-25">
+                        <div class="row" style="margin-left: 60px;">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 15%; height: 30px; background-color: white;">
+                                    N
+                                </button>
+                                <div class="dropdown-menu">
+                                    
+                                    <div><a class="dropdown-item" href="#">Ｎ</a></div>
+                                    <div><a class="dropdown-item" href="#">Ｙ</a></div>
+                                </div>
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 15%; height: 30px; background-color: white;">
+                                    Y
+                                </button>
+                                <div class="dropdown-menu">
+                                    <div><a class="dropdown-item" href="#">Ｎ</a></div>
+                                    <div><a class="dropdown-item" href="#">Ｙ</a></div>
+                                </div>
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 15%; height: 30px; background-color: white;">
+                                    날짜
+                                </button>
+                                <div class="dropdown-menu">
+                                    <input type="date">
+                                </div>
+                                <label style="width: 15%; height: 30px; background-color: white;">2024-12-25</label>
+                                <label style="width: 15%; height: 30px; background-color: white;">2025-01-24</label>
+                            </div>
                         </div>
-                        <div class="col">
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="2024-12-24">
+                        <div class="row" style="margin-left: 60px;">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 15%; height: 30px; background-color: white;">
+                                    검색 구분
+                                </button>
+                                <div class="dropdown-menu">
+                                    <div><a class="dropdown-item" href="#">Ｎ</a></div>
+                                    <div><a class="dropdown-item" href="#">Ｙ</a></div>
+                                </div>
+                                <input type="search" placeholder="검색어" style="width: 15%; height: 30px;">
+                                <button type="button" style="width: 40px; height: 30px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                  </svg></button>
+                                <button type="button" style="width: 40px; height: 30px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+                                    <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+                                  </svg></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="row" style="margin-left: 40px;">
-                        <select class="form-select" id="specificSizeSelect">
-                        <option selected>검색구분</option>
-                        </select><br>                 
-                    </div>
-                        <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-                    <!-- </div> -->
-                    <div class="col">  
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <label class="visually-hidden" for="specificSizeSelect">Preference</label>
- 
-                        <div class="mb-12">
-                            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="검색어">
-                          </div>
-                    </div>
-                    <div class="col">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-                        <button type="button" style="width: 40px; height: 30px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                          </svg></button>
-                        <button type="button" style="width: 40px; height: 30px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
-                            <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
-                          </svg></button>
-                    </div>   
-                    <div class="col">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <div class="mb-12">
-                            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                          </div>
-                    </div>   
-                    <div class="col">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <div class="mb-12">
-                            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                          </div>
-                    </div>   
-                    <div class="col">
-                    </div>  
-                </div>                             
-            </div>
-
-           <!-- <div class="row"> -->
-                <div class="col" style="background-color: rgb(255, 255, 255); height: 500px; margin-top: 280px; margin-left: 160px;" >   
-                    <!-- <div class="row" style="background-color: white; width: 105%; height: 500px; margin-left: -45px;"> -->
+                    <div class="row" style="background-color: white; width: 105%; height: 500px; margin-left: -45px;">
                         <div class="row" style="margin-left: 20px; margin-top: 10px;">
                             <div class="dropdown">
                                 <label>Total: 160</label>
@@ -559,18 +527,18 @@
                     </div>
                 </div>
             </div>
-                </div>
-                
-            </div>
-         </div>
+        </form>
+    </div>
 
-        <!-- </dic> -->
+
+
+
+
 
     <!-- </div> -->
-    <!-- </div> -->
-    
-    
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
