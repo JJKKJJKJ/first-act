@@ -109,20 +109,11 @@
             width: 90%;
             margin-left: 192px;
             margin-top: 17px;
-         
-            height: 230px;
-            /* font-size: xx-large; */
-            /* position: fixed; */
+            height: 0px;
             display: flex;
-            /* float: right; */
             justify-content: space-between;
-            /* padding-left: 40px;  */
-            /* box-sizing: border-box; */
             outline: none;
-            /* border-radius: 80px; */
             background-repeat: no-repeat;
-            /* overflow-x: hidden;
-            overflow-y: auto; */           
         }
         .ul>li{
             float: left;
@@ -276,11 +267,8 @@
     
                 </div>
             </div>
-            <!-- <dic> -->
             <div class="container-hanyong">
                 <div class="row" style="width:95%;"> 
-                    <!-- <div class="col" >   -->
-                    <!-- <span class="SJajHc" style="background:url(/images/nav_logo321_hr.webp) no-repeat;background-position:-53px 0;background-size:167px;width:20px">page</span> -->
                     <div class="row" style="margin-left: 40px; margin-top: 30px;">
                         <ul  class="ul">
                             <li><a href="Page 1 ">Page 1 ></a></li>
@@ -289,94 +277,36 @@
                         </ul>
                     </div>
                         
-                    <div class="row" style="margin-left: 40px;">
+                    <div class="row" style="margin-left: 40px; display: flex;">
                         <h2><span style="font: x-large; margin-top: 10px;">code</span></h2><br>
                     </div>
                     
                     <div class="row" style="margin-left: 40px;">
-                        <div class="col">
-                            <select class="form-select" id="specificSizeSelect">
-                            <option selected>N</option>
-                            </select>
-                        </div>           
-                        <div class="col">  
-                            <select class="form-select" id="specificSizeSelect">
-                            <option selected>Y</option>
-                            <option selected>N</option>
-                            </select>
-                        </div>
-                        <div class="col">
-                            <select class="form-select" id="specificSizeSelect">
-                                <option selected>날짜</option>
-                            </select><br>    
-                        </div>
-                        <div class="col">
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="2024-12-25">
-                        </div>
-                        <div class="col">
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="2024-12-24">
-                        </div>
+                        <select class="form-select" id="specificSizeSelect" style="width: 15%;">
+                        <option selected>N</option>
+                        </select>
+                        <select class="form-select" id="specificSizeSelect" style="width: 15%; margin-left: 5px;">
+                        <option selected>Y</option>
+                        <option selected>N</option>
+                        </select>
+                        <select class="form-select" id="specificSizeSelect" style="width: 15%; margin-left: 5px;">
+                            <option selected>날짜</option>
+                        </select>   
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="2024-12-25" style="width: 15%; margin-left: 5px;">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="2024-12-24" style="width: 15%; margin-left: 5px;">
                     </div>
-                    <div class="row" style="margin-left: 40px;">
-                        <select class="form-select" id="specificSizeSelect">
+                    <div style="margin-left: 40px; display: flex; margin-top: 10px;">
+                        <select class="form-select" id="specificSizeSelect" style="width: 15%;">
                         <option selected>검색구분</option>
-                        </select><br>                 
-                    </div>
-                        <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-                    <!-- </div> -->
-                    <div class="col">  
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <label class="visually-hidden" for="specificSizeSelect">Preference</label>
- 
-                        <div class="mb-12">
-                            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="검색어">
-                          </div>
-                    </div>
-                    <div class="col">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-                        <button type="button" style="width: 40px; height: 30px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        </select>                 
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="검색어" style="width: 15%; margin-left: 5px;">
+                        <button type="button" style="width: 40px; height: 40px; margin-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                           </svg></button>
-                        <button type="button" style="width: 40px; height: 30px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                        <button type="button" style="width: 40px; height: 40px; margin-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
                             <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
                           </svg></button>
-                    </div>   
-                    <div class="col">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <div class="mb-12">
-                            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                          </div>
-                    </div>   
-                    <div class="col">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <div class="mb-12">
-                            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                          </div>
-                    </div>   
-                    <div class="col">
                     </div>  
                 </div>                             
             </div>
